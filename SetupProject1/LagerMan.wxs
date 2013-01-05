@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+  
+  <Product Id="1E4EDF52-8CE1-4B02-87BB-1732DCDBFC65" Name="LagerMan - Beta" Language="1033" Version="1.1.0.0" Manufacturer="NetConn" UpgradeCode="9DB6DA50-2CB6-4551-B087-1545B8110518">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+<!--    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." /> -->
+		
+    <MediaTemplate />
+    
+    <Property Id='ARPPRODUCTICON'>appicon.ico</Property>
+
+    <Property Id="FOO" Secure="yes"/>
+
+    <Upgrade Id="9DB6DA50-2CB6-4551-B087-1545B8110518">
+      <UpgradeVersion Property="FOO" Minimum="0.0.0" Maximum="9.9.9" IncludeMinimum="yes"/>
+    </Upgrade>
+
+
+    <InstallExecuteSequence>
+      <RemoveExistingProducts After="InstallFinalize" />
+    </InstallExecuteSequence>
+   
+    <Icon Id="appicon.ico" SourceFile="../LagerMan/bin/Debug/LagerMan.ico" />
+
+    <Feature Id="ProductFeature" Title="LagerMan Beta" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+      <ComponentRef Id="ApplicationShortcut" />
+      <ComponentRef Id="ApplicationShortcutDesktop" />
+      <ComponentGroupRef Id="Images" />
+    </Feature>
+	</Product>
+
+  <Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="DesktopFolder" Name="Desktop"/>
+      <Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="LagerMan">
+          <Directory Id="ImageFolder" Name="images"/>
+          <Directory Id="PDFFolder" Name="pdf"/>
+        </Directory>
+			</Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="LagerMan"/>
+      </Directory>
+    </Directory>
+
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="LagerMan.exe" Guid="6A503AF9-0538-4087-AA20-619D6745BAC2">
+        <File Id="LagerMan.exe" Source="../LagerMan/bin/Debug/LagerMan.exe"></File>
+      </Component>
+        <Component Id="LagerMan.exe.config" Guid="7C70A7F8-48C4-4E77-8900-FCE20651644B">
+          <File Id="LagerMan.exe.config" Source="../LagerMan/bin/Debug/LagerMan.exe.config"></File>
+        </Component>
+      <Component Id="MigraDoc.DocumentObjectModel.dll" Guid="D41B31D4-0187-47AA-A6AB-9D4D9C4153EC">
+        <File Id="MigraDoc.DocumentObjectModel.dll" Source="../LagerMan/bin/Debug/MigraDoc.DocumentObjectModel.dll"></File>
+      </Component>
+      <Component Id="MigraDoc.Rendering.dll" Guid="B303B711-61D1-4A29-87B0-B4CD315BE032">
+        <File Id="MigraDoc.Rendering.dll" Source="../LagerMan/bin/Debug/MigraDoc.Rendering.dll"></File>
+      </Component>
+      <Component Id="mysql.data.dll" Guid="36885C03-57F4-4DE4-BBCD-07889D1AFDEB">
+        <File Id="mysql.data.dll" Source="../LagerMan/bin/Debug/mysql.data.dll"></File>
+      </Component>
+      <Component Id="PdfSharp.Charting.dll" Guid="283367E1-08C9-45CF-8B0E-02B47FF67AC5">
+        <File Id="PdfSharp.Charting.dll" Source="../LagerMan/bin/Debug/PdfSharp.Charting.dll"></File>
+      </Component>
+      <Component Id="PdfSharp.dll" Guid="109F5858-1C5B-4113-9A44-90FC6DB9686C">
+        <File Id="PdfSharp.dll" Source="../LagerMan/bin/Debug/PdfSharp.dll"></File>
+      </Component>
+		</ComponentGroup>
+
+    <ComponentGroup Id="Images" Directory="ImageFolder">
+      <Component Id="logo.png" Guid="9821A90F-9000-4FEC-A65F-8EBB837011BD">
+        <CreateFolder Directory="ImageFolder">
+          <util:PermissionEx User="Users" GenericAll="yes" />
+        </CreateFolder>
+        <File Id="logo.png" Source="../LagerMan/images/logo.png"></File>
+        <CreateFolder Directory="PDFFolder">
+          <util:PermissionEx User="Users" GenericAll="yes" />
+        </CreateFolder>
+      </Component>
+    </ComponentGroup>
+
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut" Guid="E790B541-DE2F-47F5-8446-0C1FA8768D95">
+        <Shortcut Id="ApplicationStartMenuShortcut"
+                  Name="LagerMan - Beta"
+                  Description="LagerMan Lagerstyring"
+                  Target="[INSTALLFOLDER]LagerMan.exe"
+                  WorkingDirectory="INSTALLFOLDER"/>
+        <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\LagerMan" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="DesktopFolder">
+      <Component Id="ApplicationShortcutDesktop" Guid="E80100FD-2524-419B-BF1C-C668F4964B69">
+        <Shortcut Id="ApplicationDesktopShortcut"
+                  Name="LagerMan - Beta"
+                  Description="LagerMan Lagerstyring"
+                  Target="[INSTALLFOLDER]LagerMan.exe"
+                  WorkingDirectory="INSTALLFOLDER"/>
+        <RemoveFolder Id="DesktopFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\LagerMan" Name="installed" Type="integer" Value="2" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+  
+</Wix>

@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LagerMan.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="authType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">local</Value>
+    </Setting>
+    <Setting Name="adPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LDAP://netconn.local</Value>
+    </Setting>
+    <Setting Name="isDemo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="excelNameRow" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="orderID_col" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="orderID_row" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="articleNo_col" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="articleNo_row" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="prodName_col" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="prodName_row" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DC01\DEV01;Initial Catalog=db_base_lm;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DC01\DEV01;Initial Catalog=db_base_lm;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="mysqlConn" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;SERVER=solcellespecialisten.cnwfj8va3xp9.eu-west-1.rds.amazonaws.com;Port=3306;UID=jj;PASSWORD=buDs7Cs!;&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">SERVER=solcellespecialisten.cnwfj8va3xp9.eu-west-1.rds.amazonaws.com;Port=3306;UID=jj;PASSWORD=buDs7Cs!;</Value>
+    </Setting>
+    <Setting Name="TwoDbarcodeUsers" Type="System.String" Scope="User">
+      <Value Profile="(Default)">202</Value>
+    </Setting>
+    <Setting Name="Logo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files (x86)\LagerMan\images\logo.png</Value>
+    </Setting>
+    <Setting Name="pdfSavePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files (x86)\LagerMan\pdf\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

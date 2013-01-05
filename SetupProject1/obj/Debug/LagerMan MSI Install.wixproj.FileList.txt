@@ -1,0 +1,10 @@
+C:\Users\Je\documents\visual studio 2010\Projects\LagerMan\SetupProject1\bin\Debug\cab1.cab
+C:\Users\Je\documents\visual studio 2010\Projects\LagerMan\SetupProject1\bin\Debug\SetupProject1.msi
+C:\Users\Je\documents\visual studio 2010\Projects\LagerMan\SetupProject1\bin\Debug\SetupProject1.wixpdb
+C:\Users\Je\Dropbox\NetConn\Visual Studio 2010\Projects\LagerMan\SetupProject1\bin\Debug\cab1.cab
+C:\Users\Je\Dropbox\NetConn\Visual Studio 2010\Projects\LagerMan\SetupProject1\bin\Debug\SetupProject1.msi
+C:\Users\Je\Dropbox\NetConn\Visual Studio 2010\Projects\LagerMan\SetupProject1\bin\Debug\SetupProject1.wixpdb
+obj\Debug\LagerMan.wixobj
+obj\Debug\LagerMan MSI Install.wixproj.BindContentsFileListnull.txt
+obj\Debug\LagerMan MSI Install.wixproj.BindOutputsFileListnull.txt
+obj\Debug\LagerMan MSI Install.wixproj.BindBuiltOutputsFileListnull.txt

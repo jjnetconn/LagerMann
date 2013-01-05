@@ -1,0 +1,8 @@
+../LagerMan/bin/Debug/LagerMan.exe
+../LagerMan/bin/Debug/LagerMan.exe.config
+../LagerMan/images/logo.png
+../LagerMan/bin/Debug/MigraDoc.DocumentObjectModel.dll
+../LagerMan/bin/Debug/MigraDoc.Rendering.dll
+../LagerMan/bin/Debug/mysql.data.dll
+../LagerMan/bin/Debug/PdfSharp.Charting.dll
+../LagerMan/bin/Debug/PdfSharp.dll
