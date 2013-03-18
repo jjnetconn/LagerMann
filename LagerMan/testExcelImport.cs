@@ -90,6 +90,6 @@ namespace LagerMan
             }
         }
 
-        private void commitDataSet(DataSet inDS)
+        //private void commitDataSet(DataSet inDS);
     }
 }

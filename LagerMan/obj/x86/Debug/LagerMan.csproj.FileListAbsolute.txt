@@ -36,3 +36,17 @@ C:\Users\Je\Dropbox\NetConn\Visual Studio 2010\Projects\LagerMan\LagerMan\obj\x8
 C:\Users\Je\Dropbox\NetConn\Visual Studio 2010\Projects\LagerMan\LagerMan\obj\x86\Debug\LagerMan.csproj.GenerateResource.Cache
 C:\Users\Je\Dropbox\NetConn\Visual Studio 2010\Projects\LagerMan\LagerMan\obj\x86\Debug\LagerMan.exe
 C:\Users\Je\Dropbox\NetConn\Visual Studio 2010\Projects\LagerMan\LagerMan\obj\x86\Debug\LagerMan.pdb
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\bin\Debug\LagerMan.exe.config
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\obj\x86\Debug\LagerMan.exe
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\obj\x86\Debug\LagerMan.pdb
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\obj\x86\Debug\LagerMan.csprojResolveAssemblyReference.cache
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\obj\x86\Debug\LagerMan.AddToInv.resources
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\obj\x86\Debug\LagerMan.GetFromInv.resources
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\obj\x86\Debug\LagerMan.MainForm.resources
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\obj\x86\Debug\LagerMan.LoginForm.resources
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\obj\x86\Debug\LagerMan.Properties.Resources.resources
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\obj\x86\Debug\LagerMan.csproj.GenerateResource.Cache
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\bin\Debug\LagerMan.exe
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\bin\Debug\LagerMan.pdb
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\bin\Debug\PdfSharp.dll
+C:\Users\Je\Documents\GitHub\LagerMann\LagerMan\bin\Debug\PdfSharp.Charting.dll
